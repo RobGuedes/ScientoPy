@@ -45,7 +45,7 @@ Install prerequisites
 
 1.  For run these commands to install Python3:
 
-        sudo apt-get install python3.7 python3-tk python3-pip python3-pil python3-pil.imagetk
+        sudo apt-get install python3.12 python3-tk python3-pip python3-pil python3-pil.imagetk
         
 2.  Install the unidecode, numpy, scipy, matplotlib, and wordcloud
     Python libraries. For Windows, enter in the command line (Windows +
