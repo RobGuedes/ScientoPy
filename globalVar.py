@@ -33,8 +33,8 @@ DEFAULT_START_YEAR = 1990
 DEFAULT_END_YEAR = datetime.datetime.now().year - 1
 
 # Default plot width and height in inches
-DEFAULT_PLOT_WIDTH = 6.4
-DEFAULT_PLOT_HEIGHT = 4.8
+DEFAULT_PLOT_WIDTH = 12
+DEFAULT_PLOT_HEIGHT = 6
 
 
 # Default output files and folders

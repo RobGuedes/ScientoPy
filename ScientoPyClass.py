@@ -23,6 +23,9 @@ import paperUtils
 import paperSave
 import globalVar
 import os
+import matplotlib
+matplotlib.use('Qt5Agg')
+import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 import numpy as np
 import graphUtils
@@ -545,7 +548,8 @@ class ScientoPyClass:
             plt.imshow(wc, interpolation="bilinear")
             plt.axis("off")
             fig = plt.gcf()
-            fig.canvas.set_window_title(args.criterion + ' word cloud graph')
+            fig.canvas.manager.window.setWindowTitle(args.criterion + ' word cloud graph')
+            # plt.title(args.criterion + ' word cloud graph')
 
         if args.graphType == "bar":
             graphUtils.plot_bar_horizontal(plt, self.topicResults, args)
@@ -576,8 +580,10 @@ class ScientoPyClass:
 
         if args.savePlot == "":
             if self.fromGui:
+                plt.tight_layout()
                 plt.show(block=False)
             else:
+                plt.tight_layout()
                 plt.show(block=True)
         else:
             plt.savefig(os.path.join(globalVar.GRAPHS_OUT_FOLDER, args.savePlot),
@@ -586,4 +592,5 @@ class ScientoPyClass:
 
         if args.savePlot == "":
             if self.fromGui:
+                plt.tight_layout()
                 plt.show()
