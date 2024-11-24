@@ -41,7 +41,7 @@ git command:
 Install prerequisites
 ----------------------
 
-**IMPORTANT NOTE:** ScientoPy works with Python version 3.7 and not with version 3.11
+**IMPORTANT NOTE:** This fork was made for ScientoPy to work with Python version 3.12.
 
 1.  For run these commands to install Python3:
 
